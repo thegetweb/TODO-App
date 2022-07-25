@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+
+<div class="app">
+    <h4 class="mb-3">TODO App</h4>
+    <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+        <span>Add New Task</span>
+        <i class="fas fa-plus"></i>
+    </div>
+    <h5 class="text-center my-3">Tasks</h5>
+
+
+<!-- Modal -->
+    <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Task Title</p>
+                <input class="form-control" type="text" name="" id="textinput">
+                <div id="msg"></div>
+                <br>
+                <p>Deu Date</p>
+                <input class="form-control" type="date" name="" id="dateinput">
+                <br>
+                <p>Description</p>
+                <textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" id="addBtn" class="btn btn-primary" id="add">Add</button>
+            </div>
+            </div>
+        </div>
+    </form>
+
+    <div id="tasks">
+
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
